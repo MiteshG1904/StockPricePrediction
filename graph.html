@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Prediction Graph</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+
+<div class="logo">
+
+📈
+
+<h1>Prediction Graph</h1>
+
+</div>
+
+<p>Actual vs Predicted Closing Price</p>
+
+</header>
+
+
+<div class="card">
+
+<canvas id="stockChart"></canvas>
+
+<br>
+
+<div class="button-group">
+
+<button onclick="goHome()" class="predict">
+
+🏠 Dashboard
+
+</button>
+
+<button onclick="refreshGraph()" class="graph">
+
+🔄 Refresh
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="graph.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Price Prediction System</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Header -->
+    <header>
+
+        <div class="logo">
+            <i class="fa-solid fa-chart-line"></i>
+            <h1>Stock Price Prediction System</h1>
+        </div>
+
+        <p>Machine Learning Based Stock Forecasting</p>
+
+    </header>
+
+
+    <!-- Prediction Card -->
+
+    <div class="card">
+
+        <div class="company-section">
+
+            <div class="company-logo">
+                <img src="images/Apple.jpg"
+                id="companyLogo"
+                alt="Company Logo">
+            </div>
+
+            <div class="company-select">
+
+                <label>Select Company</label>
+
+                <select id="company">
+
+                    <option value="AAPL">Apple</option>
+                    <option value="GOOGL">Google</option>
+                    <option value="TSLA">Tesla</option>
+                    <option value="AMZN">Amazon</option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+
+        <div class="input-grid">
+
+            <div class="input-box">
+
+                <label>Open Price</label>
+
+                <input
+                type="number"
+                id="open"
+                placeholder="Enter Open Price">
+
+            </div>
+
+
+            <div class="input-box">
+
+                <label>High Price</label>
+
+                <input
+                type="number"
+                id="high"
+                placeholder="Enter High Price">
+
+            </div>
+
+
+            <div class="input-box">
+
+                <label>Low Price</label>
+
+                <input
+                type="number"
+                id="low"
+                placeholder="Enter Low Price">
+
+            </div>
+
+
+            <div class="input-box">
+
+                <label>Volume</label>
+
+                <input
+                type="number"
+                id="volume"
+                placeholder="Enter Volume">
+
+            </div>
+
+        </div>
+
+
+        <!-- Result -->
+
+        <div class="prediction-card">
+
+            <h2>Predicted Closing Price</h2>
+
+            <h1 id="prediction">
+
+                ₹ 0.00
+
+            </h1>
+
+            <p id="trend">
+
+                Waiting for Prediction
+
+            </p>
+
+        </div>
+
+
+        <!-- Model Information -->
+
+        <div class="info-box">
+
+            <div>
+
+                <h3>Model</h3>
+
+                <p>Linear Regression</p>
+
+            </div>
+
+            <div>
+
+                <h3>Accuracy</h3>
+
+                <p id="accuracy">--%</p>
+
+            </div>
+
+            <div>
+
+                <h3>Status</h3>
+
+                <p id="status">Ready</p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Buttons -->
+
+        <div class="button-group">
+
+            <button id="predictBtn" class="predict">
+                <i class="fa-solid fa-brain"></i>
+                Predict
+            </button>
+
+            <button id="graphBtn" class="graph">
+                <i class="fa-solid fa-chart-column"></i>
+                Show Graph
+            </button>
+
+            <button id="historyBtn" class="history">
+                <i class="fa-solid fa-clock-rotate-left"></i>
+                History
+            </button>
+
+            <button id="clearBtn" class="clear">
+                <i class="fa-solid fa-broom"></i>
+                Clear
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        Developed by <strong>Mitesh Gawade</strong>
+
+    </footer>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

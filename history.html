@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Prediction History</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+
+<div class="logo">
+
+<i class="fa-solid fa-clock-rotate-left"></i>
+
+<h1>Prediction History</h1>
+
+</div>
+
+<p>Previously Predicted Stock Prices</p>
+
+</header>
+
+<div class="card">
+
+<table id="historyTable">
+
+<thead>
+
+<tr>
+
+<th>Date</th>
+
+<th>Company</th>
+
+<th>Open</th>
+
+<th>High</th>
+
+<th>Low</th>
+
+<th>Volume</th>
+
+<th>Prediction</th>
+
+<th>Accuracy</th>
+
+</tr>
+
+</thead>
+
+<tbody>
+
+</tbody>
+
+</table>
+
+<br>
+
+<div class="button-group">
+
+<button class="predict"
+onclick="goHome()">
+
+<i class="fa-solid fa-house"></i>
+
+Dashboard
+
+</button>
+
+<button class="graph"
+onclick="downloadCSV()">
+
+<i class="fa-solid fa-download"></i>
+
+Export CSV
+
+</button>
+
+<button class="clear"
+onclick="clearHistory()">
+
+<i class="fa-solid fa-trash"></i>
+
+Clear History
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="history.js"></script>
+
+</body>
+
+</html>
